@@ -9,4 +9,14 @@ fn main() {
     println!("age, {}!", age);
      age = 27;
     println!("updated age, {}!", age);
+
+    // DATA TYPES
+    let a: i32 = 16;
+    let pi: f64 = 3.14;
+    let is_rust_fun: bool = true;
+    let letter: char = 'A';
+    println!("{}, {}, {}, {}", a, pi, is_rust_fun, letter);
+
+    // FUNCTIONS
+    
 }
