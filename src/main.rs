@@ -18,5 +18,15 @@ fn main() {
     println!("{}, {}, {}, {}", a, pi, is_rust_fun, letter);
 
     // FUNCTIONS
-    
+    greet("Jethro");
+    let result = add(6,4);
+    println!("the result is {}!", result)
+
 }
+
+fn greet(bame: &str) {
+    println!("hello {}!", bame);
+}
+ fn add(x:i32, y:i32)->i32{
+    x+y
+ }
