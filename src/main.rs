@@ -20,7 +20,14 @@ fn main() {
     // FUNCTIONS
     greet("Jethro");
     let result = add(6,4);
-    println!("the result is {}!", result)
+    println!("the result is {}!", result);
+
+    // TUPLES AND COMPOUND TYPE
+        let person: (&str, i32, bool) = ("Alice", 30, true);
+
+    println!("Name: {}", person.0);
+    println!("Age: {}", person.1);
+    println!("Is active: {}", person.2);
 
 }
 
