@@ -23,11 +23,16 @@ fn main() {
     println!("the result is {}!", result);
 
     // TUPLES AND COMPOUND TYPE
-        let person: (&str, i32, bool) = ("Alice", 30, true);
+    let person: (&str, i32, bool) = ("Alice", 30, true);
 
     println!("Name: {}", person.0);
     println!("Age: {}", person.1);
     println!("Is active: {}", person.2);
+
+    let personn: (&str, f64, bool) = ("jethro", 12.6, false);
+    println!("Nme: {}", personn.0);
+    println!("height: {}", personn.1);
+    println!("is ugly: {}", personn.2);
 
 }
 
