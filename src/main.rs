@@ -34,6 +34,11 @@ fn main() {
     println!("height: {}", personn.1);
     println!("is ugly: {}", personn.2);
 
+    // Destructuring tuples
+    let coordinates = (4,7);
+    let (x,y) = coordinates;
+    println!("x {}, y {}",x, y);
+
 }
 
 fn greet(bame: &str) {
