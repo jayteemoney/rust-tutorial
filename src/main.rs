@@ -39,6 +39,13 @@ fn main() {
     let (x,y) = coordinates;
     println!("x {}, y {}",x, y);
 
+    // OWNERSHIP, BORROWING AND REFERENCE
+    let my_name = String::from ("nenkang");
+    let new_name = my_name;
+    println!("new name {}", new_name);
+
+
+
 }
 
 fn greet(bame: &str) {
