@@ -44,6 +44,11 @@ fn main() {
     let new_name = my_name;
     println!("new name {}", new_name);
 
+    // 
+    let nme = String:: from("jaytee");
+    greeet(&nme);
+    println!("back in main{}", nme);
+
 
 
 }
@@ -54,3 +59,7 @@ fn greet(bame: &str) {
  fn add(x:i32, y:i32)->i32{
     x+y
  }
+  fn greeet(person:&String){
+    println!("hello {}", person)
+
+  }
