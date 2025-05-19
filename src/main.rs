@@ -54,6 +54,16 @@ fn main() {
     let s_string: String = String::from("hello");
     println!("literal {}", s_literal);
     println!("string{}", s_string);
+// example
+    let greeting:&str= "Hi there!";
+    let mut dynamic_greeting: String = String::from("Hi there!");
+
+    // Modify the dynamic greeting
+    dynamic_greeting.push_str(" Welcome!");
+
+    println!("Static: {}", greeting);
+    println!("Dynamic: {}", dynamic_greeting);
+
 
 }
 
