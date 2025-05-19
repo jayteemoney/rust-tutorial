@@ -65,7 +65,7 @@ fn main() {
     println!("Dynamic: {}", dynamic_greeting);
 
     // MATCH STATEMENTS AND EXAMPLES
-    // EXAMPLE1
+    // EXAMPLE1(match with numbers)
     let number = 6;
     match number {
       1 => println!("one!"),
@@ -75,7 +75,7 @@ fn main() {
 
     }
 
-    // Example2
+    // Example2(match with strings)
     let command = "paused";
     match command {
       "start"=> println!("Game started!"),
@@ -83,6 +83,16 @@ fn main() {
       "quit"=> println!("exiting game...!"),
       _=> println!("unknown command!"),
 
+    }
+
+    // example 3 (match with range and binding)
+    let age = 18;
+
+    match age {
+        0..=12 => println!("Child"),
+        13..=19 => println!("Teenager"),
+        20..=59 => println!("Adult"),
+        _ => println!("Senior"),
     }
 
 
