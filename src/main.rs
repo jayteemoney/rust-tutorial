@@ -44,12 +44,16 @@ fn main() {
     let new_name = my_name;
     println!("new name {}", new_name);
 
-    // 
+    // Borrowing with references
     let nme = String:: from("jaytee");
     greeet(&nme);
     println!("back in main{}", nme);
 
-
+    // comparing string and string literal
+    let s_literal: &str = "hello";
+    let s_string: String = String::from("hello");
+    println!("literal {}", s_literal);
+    println!("string{}", s_string);
 
 }
 
