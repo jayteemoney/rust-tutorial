@@ -76,7 +76,7 @@ fn main() {
     }
 
     // Example2
-    let command = "start";
+    let command = "pause";
     match command {
       "start"=> println!("Game started!"),
       "pause"=> println!("Game paused!"),
