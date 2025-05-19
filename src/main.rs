@@ -66,7 +66,7 @@ fn main() {
 
     // MATCH STATEMENTS AND EXAMPLES
     // EXAMPLE1
-    let number = 3;
+    let number = 6;
     match number {
       1 => println!("one!"),
       2 => println!("two!"),
