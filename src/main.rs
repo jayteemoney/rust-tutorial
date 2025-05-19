@@ -86,7 +86,7 @@ fn main() {
     }
 
     // example 3 (match with range and binding)
-    let age = 18;
+    let age = 10;
 
     match age {
         0..=12 => println!("Child"),
