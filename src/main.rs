@@ -75,6 +75,17 @@ fn main() {
 
     }
 
+    // Example2
+    let command = "start";
+    match command {
+      "start"=> println!("Game started!"),
+      "pause"=> println!("Game paused!"),
+      "quit"=> println!("exiting game...!"),
+      _=> println!("unknown command!"),
+
+    }
+
+
 
 }
 
