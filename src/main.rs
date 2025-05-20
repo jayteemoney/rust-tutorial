@@ -106,7 +106,7 @@ fn main() {
 
     // OPTION TYPE <>
     // Example1 ()
-    let present =Some("football jersey");
+    let present =Some("babseball kit");
     let absent: Option<&str> = None;
 
     match present {
