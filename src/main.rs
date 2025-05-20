@@ -119,6 +119,15 @@ fn main() {
       None => println!("sorry nothing at the moment"),
     }
 
+    // Example 2 (improved real-world example)
+    let username = get_username(2);
+
+    match username {
+      Some(suna) => println!("welcome {}!", suna),
+      None => println!("username not found"),
+
+    }
+
 
 
 }
@@ -132,4 +141,12 @@ fn greet(bame: &str) {
   fn greeet(person:&String){
     println!("hello {}", person)
 
+  }
+  fn get_username (id:u32) -> Option<&'static str> {
+   if id == 1 {
+    Some("footballfans88")
+   }
+   else {
+    None
+   }
   }
