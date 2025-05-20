@@ -120,7 +120,7 @@ fn main() {
     }
 
     // Example 2 (improved real-world example)
-    let username = get_username(2);
+    let username = get_username(1);
 
     match username {
       Some(suna) => println!("welcome {}!", suna),
