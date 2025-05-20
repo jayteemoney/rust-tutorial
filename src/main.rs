@@ -95,6 +95,30 @@ fn main() {
         _ => println!("Senior"),
     }
 
+    // example  4
+    let day = "sunday";
+    
+    match day {
+      "monday" => println!("start of new work week"),
+      "sunday" => println!("it is weekend"),
+      _ => println!("other days of the week"),
+    }
+
+    // OPTION TYPE <>
+    // Example1 ()
+    let present =Some("football jersey");
+    let absent: Option<&str> = None;
+
+    match present {
+     Some(gift) => println!("You got a {}!", gift),
+      None => println!("sorry nothing at the moment"),
+    }
+
+     match absent {
+      Some(gift) => println!("you got a new {}", gift),
+      None => println!("sorry nothing at the moment"),
+    }
+
 
 
 }
