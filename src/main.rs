@@ -128,6 +128,12 @@ fn main() {
 
     }
 
+    let email: Option<&str> = Some("jayteemonie@gmail.com");
+    let phone: Option<&str> = None;
+
+    check_contact(email);
+    check_contact(phone);
+
 
 
 }
