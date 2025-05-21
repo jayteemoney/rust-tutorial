@@ -119,7 +119,7 @@ fn main() {
       None => println!("sorry nothing at the moment"),
     }
 
-    // Example 2 (improved real-world example)
+    // Example 2 (improved real-world example i.e login system)
     let username = get_username(1);
 
     match username {
@@ -142,6 +142,7 @@ fn greet(bame: &str) {
     println!("hello {}", person)
 
   }
+  // OPTION TYPE
   fn get_username (id:u32) -> Option<&'static str> {
    if id == 1 {
     Some("footballfans88")
@@ -149,4 +150,10 @@ fn greet(bame: &str) {
    else {
     None
    }
+  }
+  fn check_contact (contact: Option<&str>){
+    match contact {
+      Some(info) => println!("contact found : {}", info),
+      None => println!("No contact provided"),
+    }
   }
