@@ -134,6 +134,18 @@ fn main() {
     check_contact(email);
     check_contact(phone);
 
+    // example3
+        let names = ["Alice", "Bob", "Charlie"];
+
+    let index = find_index("Bob", &names);
+    match index {
+        Some(i) => println!("Found at index: {}", i),
+        None => println!("Name not found"),
+    }
+
+    let missing = find_index("David", &names);
+    println!("Result: {:?}", missing);
+
 
 
 }
@@ -163,3 +175,12 @@ fn greet(bame: &str) {
       None => println!("No contact provided"),
     }
   }
+
+  fn find_index(name: &str, list: &[&str]) -> Option<usize> {
+    for (index, &item) in list.iter().enumerate() {
+        if item == name {
+            return Some(index);
+        }
+    }
+    None
+}
